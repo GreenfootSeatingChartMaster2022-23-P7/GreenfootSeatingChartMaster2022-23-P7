@@ -1,51 +1,4 @@
-INSTRUCTIONS FROM BUILDMASTER
-===============================
-
-before doing this, navigate to a new, empty file
-
-1. Start by cloning the repository using (git clone https://github.com/GreenfootSeatingChartMaster2022-23-P7/GreenfootSeatingChartMaster2022-23-P7.git) <br /> 
-1a. ***now make sure you cd into this new repository***
-
-2. Create a new branch with the format with you first name and last name ex: <br />
-git branch firstlast <br />
-git checkout firstlast <br />
-
-add your code files, images, and audio
-
-3. Then add and commit the files you have added/changed to the branch ex: <br />
-git add FirstLast.java <br />
-git add images/firstlast.jpg <br />
-git add sounds/firstlast.wav <br />
-git commit -m "add firstlast files" <br />
-
-4. Your branch is currently a local branch but you need to push it to a remote branch. ex: <br />
-**BEFORE DOING THIS, MAKE SURE IT RUNS FINE ON YOUR END (INCLUDING ALL THE FILES YOUVE DOWNLOADED FROM GIT CLONE)** <br />
-## ***most likely this will just be updating classroom.java and making sure your seat isnt overlapping with someone elses*** <br />
-git push -u origin branchname <br />
-
-
-5. Your branch should be on the github remote repository now!
-
-6. Once you have it on your branch, go to the master branch of the repository <br />
-**CLICK COMPARE AND CREATE PULL REQUEST** <br />
-
-![My Image](imagesForGithubReadme/image1.png)
-
-**MAKE SURE TO CHANGE THE UPSTREAM**
-
-![My Image](imagesForGithubReadme/image2.png)
-
-**change pull request title to your name**
-
-![My Image](imagesForGithubReadme/image3.png)
-
-**once PULL REQUEST is submitted, we will merge it if it should merge successfully, otherwise we will mark for review**
-
- *If your branch is not showing up on the repository or you are confused, watch this video for help: https://www.coursera.org/lecture/introduction-git-github/the-typical-pull-request-workflow-on-github-8mpDb*
-
-PROJECT INSTRUCTIONS 
-======
-
+﻿
 PROJECT TITLE: AP CSA Assignment 1 (An interactive seating chart using Greenfoot)
 
 PURPOSE OF PROJECT: The purpose of this assignment is to visually work with classes and subclasses, abstract classes, and interfaces, and to familiarize yourself with the basics of the GIT command line.  As a side effect, it will help your instructor learn your names!
@@ -123,6 +76,7 @@ and update the master repository.  Access rights can be assigned to groups, and 
 (Google "popular GIT workflows).  We will discuss some in class.
 
 See the Canvas instructions for a complete set of requirements for this year's project.
+
 
 
 

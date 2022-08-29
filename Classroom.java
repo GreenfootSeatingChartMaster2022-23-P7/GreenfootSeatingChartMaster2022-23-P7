@@ -135,7 +135,6 @@ public class Classroom extends World
         studentdesk19.setDeskGroup(8);
         studentdesk18.setDeskGroup(8);
         studentdesk20.setDeskGroup(8);
-        
     }
    
     
@@ -154,10 +153,11 @@ public class Classroom extends World
         addObject(kilgoretrout,2,3);
         kilgoretrout.assignSeat();
         
+        WaleedRydhan waleedrydhan = new WaleedRydhan();
+        addObject(waleedrydhan,3,7);
+        waleedrydhan.assignSeat();
         
-        AnikaitSrivastav anikaitsrivastav = new AnikaitSrivastav();
-        addObject(anikaitsrivastav,6,7);
-        anikaitsrivastav.assignSeat();  
+        
   
     }
     
