@@ -216,6 +216,9 @@ public class Classroom extends World
         waleedrydhan.assignSeat();
 
 
+        AbhinithiJanardhanan abhinithijanardhanan = new AbhinithiJanardhanan();
+        addObject(abhinithijanardhanan, 2, 4);
+        abhinithijanardhanan.assignSeat();  
     }
     
     public List<Student> getAllStudents(){
