@@ -3,9 +3,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * The KilgoreTrout class can be used as a model for your own class that represents you and your seating location in AP CSA
  * 
- * @author Mr. Kaehms
- * @version 2.0 Aug 13, 2019
- * @version 3.0 July 21, 2020
+ * @author Evan Roche
+ * @version 2.0 Aug 24, 2022
  */
 public class EvanRoche extends Student implements SpecialInterestOrHobby
 {
@@ -62,7 +61,7 @@ public class EvanRoche extends Student implements SpecialInterestOrHobby
                 //sitting=false;
                 //setImage("evanLeft.jpg"); 
                 // System.out.println(""); // Print a blank line to create space between any student output.
-                getName();
+                // getName();
                 //sayName(soundFile);
             
                 //myHobby("I like to time travel!");
@@ -96,14 +95,19 @@ public class EvanRoche extends Student implements SpecialInterestOrHobby
      * You should write your own methods to perform your own animation for your character/avatar.
      */
     public void circleClass(){
+        //Turns Left
          Greenfoot.delay(10);
          setLocation(1, 7);
          Greenfoot.delay(10);
+         
+        //Moves Up
          setImage("evanroche.jpg"); 
          Greenfoot.delay(10);
          setLocation(1, 6);
          Greenfoot.delay(10);
          setLocation(1, 5);
+         
+         //Turns Right
          setImage("evanTurnRight.jpg"); 
          Greenfoot.delay(10);
          for (int i=1; i<=6; i++) {
@@ -111,25 +115,20 @@ public class EvanRoche extends Student implements SpecialInterestOrHobby
              Greenfoot.delay(10);
         }
         setLocation(7, 6);
+        
+        //Moves Down
         setImage("evanDown.jpg"); 
         Greenfoot.delay(10);
         setLocation(7, 7);
         Greenfoot.delay(10);
         setLocation(6, 7);
+        setImage("evanroche.jpg");
         Greenfoot.delay(10);
-        //setImage("evanLeft.jpg"); 
         setImage("evanBig.jpg");
         setLocation(5,5);
-        for (int i=1; i<6; i++) {
-            Greenfoot.delay(5);
-            setImage("evanBig.jpg");
-            Greenfoot.delay(5);
-            setImage("evanRightBig.jpg");
-            Greenfoot.delay(5);
-            setImage("evanDownBig.jpg");
-            Greenfoot.delay(5);
-            setImage("evanLeftBig.jpg");
-        }
+        
+        //Spins Image
+        spinImage(10);
         returnToSeat();
         setImage("evanroche.jpg");
         

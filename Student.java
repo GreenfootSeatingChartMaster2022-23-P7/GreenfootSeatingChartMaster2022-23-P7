@@ -3,8 +3,8 @@ import java.util.ArrayList;
 /**
  * Write a description of class Student here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Evan Roche 
+ * @version 1.0 8/29/2022
  */
 public abstract class Student extends Actor
 {
@@ -68,6 +68,30 @@ public abstract class Student extends Actor
     public void assignSeat(){
         mySeatX=getX();
         mySeatY=getY();
+    }
+    /**
+    This function can be called to any object under the Student class
+    Clicking a student with this method will make the student spin around
+    Number of spins dictated by argument given during call 
+    */
+    public void spinImage(int spins) {
+        /*
+         Team Members
+         Evan Roche
+         Waleed Rydhan
+         Theo Leung
+         Ryan Lin
+         */
+        for (int i=0; i < spins; i++) {
+            setRotation(90); //turns image 90 degrees 
+            Greenfoot.delay(5); //time image is shown
+            setRotation(180);
+            Greenfoot.delay(5);
+            setRotation(270);
+            Greenfoot.delay(5);
+            setRotation(360);
+            Greenfoot.delay(5);
+        }
     }
  
 }
