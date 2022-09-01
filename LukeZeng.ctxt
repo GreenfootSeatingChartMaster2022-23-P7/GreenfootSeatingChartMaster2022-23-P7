@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=LukeZeng
+comment0.text=\r\n\ Luke\ Zeng\ class.\r\n\ \r\n\ @author\ Luke\ Zeng\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=f\ l\ r\ s
+comment1.target=LukeZeng(java.lang.String,\ java.lang.String,\ int,\ int)
+comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ Luke\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment2.params=
+comment2.target=LukeZeng()
+comment3.params=
+comment3.target=void\ act()
+comment4.params=
+comment4.target=void\ getName()
+comment5.params=s
+comment5.target=void\ myHobby(java.lang.String)
+comment6.params=
+comment6.target=void\ circleClass()
+numComments=7
