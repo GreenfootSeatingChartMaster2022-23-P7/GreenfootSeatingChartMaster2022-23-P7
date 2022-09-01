@@ -108,6 +108,23 @@ public abstract class Student extends Actor
     }
     
     /**
+*Description: We made the student move around randomly instead of in the same movement at all times and be placed in a seat. 
+*@param : No parameters
+*@authors Mayank, Viswa, Kaustubh, Katie
+*/
+
+   public void randMovement(){ 
+   for (int j=0; j<= 10; j++){
+
+
+      setLocation(Greenfoot.getRandomNumber(10), Greenfoot.getRandomNumber(10)); 
+      Greenfoot.delay(20); 
+   }
+ }
+
+randMovement();
+
+    /**
      * First spins around the border
      * Then transports itself to top right corner and goes down vertically
      * After it goes down vertically it goes back to the top one line to the left
