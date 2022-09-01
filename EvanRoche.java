@@ -29,7 +29,6 @@ public class EvanRoche extends Student implements SpecialInterestOrHobby
         portraitFile=f.toLowerCase()+l.toLowerCase()+".jpg";    // Make sure to name your image files firstlast.jpg, all lowercase!!!
         standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
         soundFile=f.toLowerCase()+l.toLowerCase()+".wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
-        //setImage(portraitFile);
         sitting=true;
     }
     /**
@@ -62,9 +61,9 @@ public class EvanRoche extends Student implements SpecialInterestOrHobby
                 //setImage("evanLeft.jpg"); 
                 // System.out.println(""); // Print a blank line to create space between any student output.
                 // getName();
-                //sayName(soundFile);
+                sayName(soundFile);
             
-                //myHobby("I like to time travel!");
+                myHobby("I like playing chess!");
             // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
             // combination of all of those types of actions, or more. Make sure to save the original image if you manipulate it, so that you can put it back.
             // Call the sitDown() method to move back  to your seat
