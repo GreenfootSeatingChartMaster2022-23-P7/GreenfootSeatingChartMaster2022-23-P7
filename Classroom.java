@@ -136,6 +136,7 @@ public class Classroom extends World
         studentdesk18.setDeskGroup(8);
         studentdesk20.setDeskGroup(8);
     }
+    
    
     
     /**
@@ -152,6 +153,47 @@ public class Classroom extends World
         KilgoreTrout kilgoretrout = new KilgoreTrout();
         addObject(kilgoretrout,2,3);
         kilgoretrout.assignSeat();
+        
+        
+        TheoLeung theoleung = new TheoLeung();
+        addObject(theoleung,3,6);
+        theoleung.assignSeat();
+
+        RyanLin ryanlin = new RyanLin();
+        addObject(ryanlin,2,6);
+        ryanlin.assignSeat();
+
+        AnikaitSrivastav anikaitsrivastav = new AnikaitSrivastav();
+        addObject(anikaitsrivastav,8,9);
+        anikaitsrivastav.assignSeat(); 
+
+        AlexanderSuen alexandersuen = new AlexanderSuen();
+        addObject(alexandersuen,6,10);
+        alexandersuen.assignSeat();
+        
+        KrithikTamilvanan krithiktamilvanan = new KrithikTamilvanan();
+        addObject(krithiktamilvanan,5,10);
+        krithiktamilvanan.assignSeat();
+
+        LukeZeng lukezeng = new LukeZeng();
+        addObject(lukezeng,9,10);
+        lukezeng.assignSeat();
+
+        HitarthShukla hitarthshukla = new HitarthShukla();
+        addObject(hitarthshukla,5,10);
+        hitarthshukla.assignSeat();
+
+        AndresSilvera andressilvera = new AndresSilvera();
+        addObject(andressilvera,5,9);
+        andressilvera.assignSeat();
+
+        JohnnyLei johnnylei = new JohnnyLei();
+        addObject(johnnylei,9,4);
+        johnnylei.assignSeat();
+
+        SeanLee seanlee = new SeanLee();
+        addObject(seanlee,8,4);
+        seanlee.assignSeat();
         
         WaleedRydhan waleedrydhan = new WaleedRydhan();
         addObject(waleedrydhan,3,7);
