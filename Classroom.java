@@ -174,6 +174,9 @@ public class Classroom extends World
         addObject(lukezeng,8,9);
         lukezeng.assignSeat();
         
+        KennethNg kennethng = new KennethNg();
+        addObject(kennethng,5,6);
+        kennethng.assignSeat();
     }
     
     public List<Student> getAllStudents(){
