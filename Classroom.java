@@ -199,14 +199,23 @@ public class Classroom extends World
         addObject(seanlee,8,4);
         seanlee.assignSeat();
 
+        SreenidhiSreenivasan sreenidhisreenivasan = new SreenidhiSreenivasan();
+        addObject(sreenidhisreenivasan,9,9);
+        sreenidhisreenivasan.assignSeat();
+
         SaachiTuli saachituli = new SaachiTuli();
         addObject(saachituli,8,10);
         saachituli.assignSeat();
 
+        PranaviGollanapalli pranavigollanapalli = new PranaviGollanapalli();
+        addObject(pranavigollanapalli,8,3);
+        pranavigollanapalli.assignSeat();
+
         WaleedRydhan waleedrydhan = new WaleedRydhan();
         addObject(waleedrydhan,3,7);
         waleedrydhan.assignSeat();
-        
+
+
     }
     
     public List<Student> getAllStudents(){
