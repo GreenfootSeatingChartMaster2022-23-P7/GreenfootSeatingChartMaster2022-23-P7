@@ -171,7 +171,7 @@ public class Classroom extends World
         alexandersuen.assignSeat();
 
         KrithikTamilvanan krithiktamilvanan = new KrithikTamilvanan();
-        addObject(krithiktamilvanan,5,10);
+        addObject(krithiktamilvanan,5,6);
         krithiktamilvanan.assignSeat();
         
         SrirangSanthosh srirangsanthosh = new SrirangSanthosh();
@@ -221,7 +221,10 @@ public class Classroom extends World
         EvanRoche evanroche = new EvanRoche();
         addObject(evanroche,2,7);
         evanroche.assignSeat();
-
+        
+        KennethNg kennethng = new KennethNg();
+        addObject(kennethng,5,6);
+        kennethng.assignSeat();
 
         AbhinithiJanardhanan abhinithijanardhanan = new AbhinithiJanardhanan();
         addObject(abhinithijanardhanan, 2, 4);
