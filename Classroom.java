@@ -221,15 +221,14 @@ public class Classroom extends World
         EvanRoche evanroche = new EvanRoche();
         addObject(evanroche,2,7);
         evanroche.assignSeat();
-
+        
+        AnishaRao anisharao = new AnishaRao();
+        addObject(anisharao,8,6);
+        anisharao.assignSeat();
 
         AbhinithiJanardhanan abhinithijanardhanan = new AbhinithiJanardhanan();
         addObject(abhinithijanardhanan, 2, 4);
         abhinithijanardhanan.assignSeat();  
-	
-	AnishaRao anisharao = new AnishaRao();
-        addObject(anisharao,8,6);
-        anisharao.assignSeat();
 
     }
 
@@ -304,3 +303,4 @@ public class Classroom extends World
    }
 }
 }
+

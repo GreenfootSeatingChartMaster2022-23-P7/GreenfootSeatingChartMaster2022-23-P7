@@ -55,7 +55,7 @@ public abstract class Student extends Actor
     }
     
     public void sayName(String myNameFile){
-        // Greenfoot.playSound(myNameFile);
+        Greenfoot.playSound(myNameFile);
     }
     
     public void returnToSeat(){
