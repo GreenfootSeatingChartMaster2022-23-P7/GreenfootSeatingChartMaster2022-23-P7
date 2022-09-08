@@ -223,9 +223,6 @@ public class Classroom extends World
         addObject(evanroche,2,7);
         evanroche.assignSeat();
         
-        KennethNg kennethng = new KennethNg();
-        addObject(kennethng,5,6);
-        kennethng.assignSeat();
         
         AnishaRao anisharao = new AnishaRao();
         addObject(anisharao,8,6);
