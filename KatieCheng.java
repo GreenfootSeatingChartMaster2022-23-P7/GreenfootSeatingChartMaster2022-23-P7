@@ -38,8 +38,18 @@ public class KatieCheng extends Student implements SpecialInterestOrHobby
      * Pay attention to how the row and seat variables set the location of the image.  1,1 is the first cell in the upper left
      * of the classroom.
      */
-    
-    
+    public KatieCheng() {
+       firstName="Katie";
+       lastName="Cheng";
+       mySeatX=3;
+       mySeatY=4;
+       //imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
+       portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
+       standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
+       soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
+       setImage(portraitFile);
+       sitting=true;
+   }
     
      /**
      * Act - do whatever the KatieCheng actor wants to do. This method is called whenever
