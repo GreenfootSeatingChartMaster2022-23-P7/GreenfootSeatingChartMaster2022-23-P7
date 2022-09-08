@@ -136,14 +136,7 @@ public class Classroom extends World
         studentdesk18.setDeskGroup(8);
         studentdesk20.setDeskGroup(8);
     }
-<<<<<<< Updated upstream
-   
-    
-=======
 
-
-
->>>>>>> Stashed changes
     /**
      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.
@@ -158,13 +151,7 @@ public class Classroom extends World
         KilgoreTrout kilgoretrout = new KilgoreTrout();
         addObject(kilgoretrout,2,3);
         kilgoretrout.assignSeat();
-<<<<<<< Updated upstream
-        
-        EvanRoche evanroche = new EvanRoche();
-        addObject(evanroche,2,7);
-        evanroche.assignSeat();
   
-=======
 
 
         TheoLeung theoleung = new TheoLeung();
@@ -232,7 +219,10 @@ public class Classroom extends World
         evanroche.assignSeat();
 
 
->>>>>>> Stashed changes
+        AbhinithiJanardhanan abhinithijanardhanan = new AbhinithiJanardhanan();
+        addObject(abhinithijanardhanan, 2, 4);
+        abhinithijanardhanan.assignSeat();  
+
     }
 
     public List<Student> getAllStudents(){
