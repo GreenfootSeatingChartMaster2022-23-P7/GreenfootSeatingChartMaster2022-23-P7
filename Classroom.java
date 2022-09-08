@@ -231,6 +231,10 @@ public class Classroom extends World
         AbhinithiJanardhanan abhinithijanardhanan = new AbhinithiJanardhanan();
         addObject(abhinithijanardhanan, 2, 4);
         abhinithijanardhanan.assignSeat();  
+        
+        ArjunPatel arjunpatel = new ArjunPatel();
+        addObject(arjunpatel,9,6);
+        arjunpatel.assignSeat();
 
     }
 
