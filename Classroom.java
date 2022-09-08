@@ -135,7 +135,6 @@ public class Classroom extends World
         studentdesk19.setDeskGroup(8);
         studentdesk18.setDeskGroup(8);
         studentdesk20.setDeskGroup(8);
-        
     }
    
     
@@ -153,36 +152,7 @@ public class Classroom extends World
         KilgoreTrout kilgoretrout = new KilgoreTrout();
         addObject(kilgoretrout,2,3);
         kilgoretrout.assignSeat();
-        
-        RyanLin ryanlin = new RyanLin();
-        addObject(ryanlin,2,6);
-        ryanlin.assignSeat();
-        
-        AnikaitSrivastav anikaitsrivastav = new AnikaitSrivastav();
-        addObject(anikaitsrivastav,8,9);
-        anikaitsrivastav.assignSeat(); 
-        
-        AlexanderSuen alexandersuen = new AlexanderSuen();
-        addObject(alexandersuen,6,10);
-        alexandersuen.assignSeat();
-        
-        KrithikTamilvanan krithiktamilvanan = new KrithikTamilvanan();
-        addObject(krithiktamilvanan,5,10);
-        krithiktamilvanan.assignSeat();
-        
-        LukeZeng lukezeng = new LukeZeng();
-        addObject(lukezeng,9,10);
-        lukezeng.assignSeat();
-        
-        HitarthShukla hitarthshukla = new HitarthShukla();
-        addObject(hitarthshukla,6,9);
-        hitarthshukla.assignSeat();
-        
-        AndresSilvera andressilvera = new AndresSilvera();
-        addObject(andressilvera,5,9);
-        andressilvera.assignSeat();
-        
-        
+  
     }
     
     public List<Student> getAllStudents(){
@@ -226,32 +196,32 @@ public class Classroom extends World
     
 
    public  void appendFile(String fname, String s){
-   {    
+   {	
       try{
-         
+    	 
         //Specify the file name and path here
-        File file =new File(fname);
+    	File file =new File(fname);
 
-        /* This logic is to create the file if the
-         * file is not already present
-         */
-        if(!file.exists()){
-           file.createNewFile();
-        }
+    	/* This logic is to create the file if the
+    	 * file is not already present
+    	 */
+    	if(!file.exists()){
+    	   file.createNewFile();
+    	}
 
-        //Here true is to append the content to file
-        FileWriter fw = new FileWriter(file,true);
-        //BufferedWriter writer give better performance
-        BufferedWriter bw = new BufferedWriter(fw);
-        bw.write(s);
-        //Closing BufferedWriter Stream
-        bw.close();
+    	//Here true is to append the content to file
+    	FileWriter fw = new FileWriter(file,true);
+    	//BufferedWriter writer give better performance
+    	BufferedWriter bw = new BufferedWriter(fw);
+    	bw.write(s);
+    	//Closing BufferedWriter Stream
+    	bw.close();
 
-    System.out.println("Data successfully appended at the end of file");
+	System.out.println("Data successfully appended at the end of file");
 
       }catch(IOException ioe){
          System.out.println("Exception occurred:");
-         ioe.printStackTrace();
+    	 ioe.printStackTrace();
        }
    }
 }
