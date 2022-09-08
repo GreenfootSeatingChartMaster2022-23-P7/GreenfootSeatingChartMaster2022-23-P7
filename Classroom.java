@@ -1,3 +1,4 @@
+
 import java.util.*;
 import greenfoot.*;
 //import java.util.ArrayList;
@@ -171,7 +172,7 @@ public class Classroom extends World
         alexandersuen.assignSeat();
 
         KrithikTamilvanan krithiktamilvanan = new KrithikTamilvanan();
-        addObject(krithiktamilvanan,5,10);
+        addObject(krithiktamilvanan,5,6);
         krithiktamilvanan.assignSeat();
         
         SrirangSanthosh srirangsanthosh = new SrirangSanthosh();
@@ -221,6 +222,10 @@ public class Classroom extends World
         EvanRoche evanroche = new EvanRoche();
         addObject(evanroche,2,7);
         evanroche.assignSeat();
+        
+        KennethNg kennethng = new KennethNg();
+        addObject(kennethng,5,6);
+        kennethng.assignSeat();
         
         AnishaRao anisharao = new AnishaRao();
         addObject(anisharao,8,6);
@@ -303,4 +308,3 @@ public class Classroom extends World
    }
 }
 }
-
