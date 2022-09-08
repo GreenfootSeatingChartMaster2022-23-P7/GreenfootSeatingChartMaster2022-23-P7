@@ -231,6 +231,11 @@ public class Classroom extends World
         AbhinithiJanardhanan abhinithijanardhanan = new AbhinithiJanardhanan();
         addObject(abhinithijanardhanan, 2, 4);
         abhinithijanardhanan.assignSeat();  
+        
+        ViswaChoudhary viswachoudhary = new ViswaChoudhary("Viswa", "Choudhary",2,4); //added this to call the method in ViswaChoudhary.java
+        addObject(viswachoudhary,2,4); //added this to add an object and give it a row and column number
+        viswachoudhary.assignSeat(); // assigned a seat pertained to the object I created        
+        
 
     }
 
