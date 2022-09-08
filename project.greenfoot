@@ -15,11 +15,15 @@ dependency3.from=Classroom
 dependency3.to=KilgoreTrout
 dependency3.type=UsesDependency
 dependency4.from=Classroom
+<<<<<<< Updated upstream
 
 dependency4.to=RyanLin
 
 dependency4.to=EvanRoche
 
+=======
+dependency4.to=EvanRoche
+>>>>>>> Stashed changes
 dependency4.type=UsesDependency
 dependency5.from=Classroom
 dependency5.to=Student
@@ -30,11 +34,15 @@ dependency6.type=UsesDependency
 dependency7.from=Student
 dependency7.to=Classroom
 dependency7.type=UsesDependency
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 editor.fx.0.height=0
 editor.fx.0.width=0
 editor.fx.0.x=0
 editor.fx.0.y=0
+<<<<<<< Updated upstream
 height=948
 
 editor.fx.0.height=737
@@ -43,6 +51,9 @@ editor.fx.0.x=454
 editor.fx.0.y=23
 height=633
 
+=======
+height=1025
+>>>>>>> Stashed changes
 package.numDependencies=7
 package.numTargets=15
 project.charset=UTF-8
@@ -55,6 +66,7 @@ publish.title=
 publish.url=
 readme.height=60
 readme.name=@README
+<<<<<<< Updated upstream
 
 readme.width=48
 readme.x=10
@@ -86,12 +98,45 @@ target11.x=0
 target11.y=0
 target12.height=50
 target12.name=CSALearnedSoFar
+=======
+readme.width=49
+readme.x=10
+readme.y=10
+simulation.speed=50
+target1.height=70
+target1.name=EvanRoche
+target1.naviview.expanded=true
+target1.showInterface=false
+target1.type=ClassTarget
+target1.width=120
+target1.x=0
+target1.y=0
+target10.height=50
+target10.name=StudentAthlete
+target10.naviview.expanded=true
+target10.showInterface=false
+target10.type=InterfaceTarget
+target10.width=120
+target10.x=0
+target10.y=0
+target11.height=50
+target11.name=KilgoreTrout
+target11.naviview.expanded=true
+target11.showInterface=false
+target11.type=ClassTarget
+target11.width=90
+target11.x=160
+target11.y=300
+target12.height=50
+target12.name=TeacherDesk
+>>>>>>> Stashed changes
 target12.naviview.expanded=true
 target12.showInterface=false
 target12.type=InterfaceTarget
 target12.width=140
 target12.x=0
 target12.y=0
+<<<<<<< Updated upstream
 target13.height=70
 target13.name=DateFormatter
 target13.showInterface=false
@@ -140,6 +185,14 @@ target13.showInterface=false
 target13.type=InterfaceTarget
 target13.width=140
 
+=======
+target13.height=50
+target13.name=CSALearnedSoFar
+target13.naviview.expanded=true
+target13.showInterface=false
+target13.type=InterfaceTarget
+target13.width=140
+>>>>>>> Stashed changes
 target13.x=0
 target13.y=0
 target14.height=50
@@ -151,11 +204,15 @@ target14.width=130
 target14.x=0
 target14.y=0
 target15.height=70
+<<<<<<< Updated upstream
 
 target15.name=RyanLin
 
 target15.name=DateFormatter
 
+=======
+target15.name=DateFormatter
+>>>>>>> Stashed changes
 target15.showInterface=false
 target15.type=ClassTarget
 target15.width=120
@@ -170,6 +227,7 @@ target2.width=140
 target2.x=0
 target2.y=0
 target3.height=50
+<<<<<<< Updated upstream
 target3.name=StudentDesk
 target3.naviview.expanded=true
 target3.showInterface=false
@@ -197,6 +255,19 @@ target4.height=50
 target4.name=StudentDesk
 target4.naviview.expanded=true
 target4.showInterface=false
+=======
+target3.name=StudentLeadership
+target3.naviview.expanded=true
+target3.showInterface=false
+target3.type=InterfaceTarget
+target3.width=140
+target3.x=0
+target3.y=0
+target4.height=50
+target4.name=StudentDesk
+target4.naviview.expanded=true
+target4.showInterface=false
+>>>>>>> Stashed changes
 target4.type=ClassTarget
 target4.width=100
 target4.x=0
@@ -210,6 +281,7 @@ target5.width=90
 target5.x=0
 target5.y=0
 target6.height=50
+<<<<<<< Updated upstream
 
 target6.name=Teacher
 target6.naviview.expanded=true
@@ -285,3 +357,41 @@ world.lastInstantiated=Classroom
 xPosition=108
 yPosition=129
 
+=======
+target6.name=SpecialInterestOrHobby
+target6.naviview.expanded=true
+target6.showInterface=false
+target6.type=InterfaceTarget
+target6.width=110
+target6.x=10
+target6.y=480
+target7.height=50
+target7.name=Teacher
+target7.naviview.expanded=true
+target7.showInterface=false
+target7.type=AbstractTarget
+target7.width=80
+target7.x=10
+target7.y=420
+target8.height=50
+target8.name=NumberOfSiblings
+target8.naviview.expanded=true
+target8.showInterface=false
+target8.type=InterfaceTarget
+target8.width=140
+target8.x=120
+target8.y=240
+target9.height=50
+target9.name=Student
+target9.naviview.expanded=true
+target9.showInterface=false
+target9.type=AbstractTarget
+target9.width=80
+target9.x=0
+target9.y=0
+version=3.0.0
+width=1136
+world.lastInstantiated=Classroom
+xPosition=108
+yPosition=128
+>>>>>>> Stashed changes
