@@ -127,8 +127,16 @@ public class EvanRoche extends Student implements SpecialInterestOrHobby
         setLocation(5,5);
         
         //Spins Image
-        spinImage(10);
-        returnToSeat();
+        for (int i=0; i < 10; i++) {
+            setRotation(90); //turns image 90 degrees 
+            Greenfoot.delay(5); //time image is shown
+            setRotation(180);
+            Greenfoot.delay(5);
+            setRotation(270);
+            Greenfoot.delay(5);
+            setRotation(360);
+            Greenfoot.delay(5);
+        }returnToSeat();
         setImage("evanroche.jpg");
         
     }
