@@ -173,6 +173,10 @@ public class Classroom extends World
         KrithikTamilvanan krithiktamilvanan = new KrithikTamilvanan();
         addObject(krithiktamilvanan,5,10);
         krithiktamilvanan.assignSeat();
+        
+        SrirangSanthosh srirangsanthosh = new SrirangSanthosh();
+        addObject(srirangsanthosh,6,7);
+        srirangsanthosh.assignSeat();
 
         LukeZeng lukezeng = new LukeZeng();
         addObject(lukezeng,9,10);
