@@ -66,7 +66,7 @@ public class AnishaRao extends Student implements SpecialInterestOrHobby
                 setImage(standingFile);
                 GreenfootImage image = getImage();  
                 image.scale(115, 130);
-                setImage(image);
+                Greenfoot.delay(6);
                 System.out.println(""); // Print a blank line to create space between any student output.
                 getName();
                 sayName(soundFile);
@@ -107,6 +107,17 @@ public class AnishaRao extends Student implements SpecialInterestOrHobby
      * You should write your own methods to perform your own animation for your character/avatar.
      */
     public void animation(){
+        int x = 110;
+        int y = 130;
+        GreenfootImage image = getImage();  
+        image.scale(x, y);
+        Greenfoot.delay(6);
+        for (int i=10;i<=20;i++) {
+            image.scale(x*i/10, y*i/10); 
+            Greenfoot.delay(3); }
+        for (int i=20;i>=10;i--) {
+            image.scale(x*i/10, y*i/10); 
+            Greenfoot.delay(3); }
         for (int i=0;i<=360;i+=10) {
         setRotation(i);
         Greenfoot.delay(6);
