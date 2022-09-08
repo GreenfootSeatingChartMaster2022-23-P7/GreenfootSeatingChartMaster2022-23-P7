@@ -1,3 +1,4 @@
+
 import java.util.*;
 import greenfoot.*;
 //import java.util.ArrayList;
@@ -225,6 +226,10 @@ public class Classroom extends World
         KennethNg kennethng = new KennethNg();
         addObject(kennethng,5,6);
         kennethng.assignSeat();
+        
+        AnishaRao anisharao = new AnishaRao();
+        addObject(anisharao,8,6);
+        anisharao.assignSeat();
 
         AbhinithiJanardhanan abhinithijanardhanan = new AbhinithiJanardhanan();
         addObject(abhinithijanardhanan, 2, 4);
