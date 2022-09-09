@@ -4,8 +4,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * The KilgoreTrout class can be used as a model for your own class that represents you and your seating location in AP CSA
  * 
  * @author Mr. Kaehms
- * @version 2.0 Aug 13, 2019
- * @version 3.0 July 21, 2020
+ * @version 9/8/22
  */
 public class WaleedRydhan extends Student implements SpecialInterestOrHobby
 {
@@ -46,7 +45,7 @@ public class WaleedRydhan extends Student implements SpecialInterestOrHobby
        //imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
-        //soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".mp3";
+        soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
         setImage(portraitFile);
         sitting=true;
     }
@@ -62,11 +61,11 @@ public class WaleedRydhan extends Student implements SpecialInterestOrHobby
           //  if (sitting){
                 sitting=false;
                 setImage(standingFile);
-                //System.out.println(""); // Print a blank line to create space between any student output.
-                //getName();
-                sayName("waleedrydhan.mp3");
+                System.out.println(""); // Print a blank line to create space between any student output.
+                getName();
+                sayName(soundFile);
             
-                //myHobby("I like to time travel!");
+                myHobby("I like to play video games!");
             // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
             // combination of all of those types of actions, or more. Make sure to save the original image if you manipulate it, so that you can put it back.
             // Call the sitDown() method to move back  to your seat

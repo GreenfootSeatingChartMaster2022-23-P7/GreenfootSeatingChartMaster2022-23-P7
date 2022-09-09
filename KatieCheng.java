@@ -1,16 +1,17 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * The PranaviGollanapalli class can be used as a model for your own class that represents you and your seating location in AP CSA
+ * The KatieCheng class can be used as a model for your own class that represents you and your seating location in AP CSA
  * 
  * @author Mr. Kaehms
  * @version 2.0 Aug 13, 2019
  * @version 3.0 July 21, 2020
  */
-public class PranaviGollanapalli extends Student implements SpecialInterestOrHobby
+public class KatieCheng extends Student implements SpecialInterestOrHobby
 {
+
     /**
-     * Constructor for the PranaviGollanapalli class.
+     * Constructor for the KatieCheng class.
      * Constructors are special methods with the same exact name as the class name.  
      * Constructors to not have return types.
      * Constructors can be overloaded. This means we can call a constructor with different sets of parameter
@@ -21,13 +22,13 @@ public class PranaviGollanapalli extends Student implements SpecialInterestOrHob
      * @param int s (seat number within row seating arrangement)
      * 
      */
-    public PranaviGollanapalli(String f, String l, int r, int s) {
+    public KatieCheng(String f, String l, int r, int s) {
         firstName=f;
         lastName=l;
         mySeatX=r;
         mySeatY=s;
         portraitFile=f.toLowerCase()+l.toLowerCase()+".jpg";    // Make sure to name your image files firstlast.jpg, all lowercase!!!
-        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.png";
+        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
         soundFile=f.toLowerCase()+l.toLowerCase()+".wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
         setImage(portraitFile);
         sitting=true;
@@ -37,21 +38,21 @@ public class PranaviGollanapalli extends Student implements SpecialInterestOrHob
      * Pay attention to how the row and seat variables set the location of the image.  1,1 is the first cell in the upper left
      * of the classroom.
      */
-    public PranaviGollanapalli() {
-        firstName="Pranavi";
-        lastName="Gollanapalli";
-        mySeatX=2;
-        mySeatY=6;
-       // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
-        portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
-        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.png";
-        soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
-        setImage(portraitFile);
-        sitting=true;
-    }
+    public KatieCheng() {
+       firstName="Katie";
+       lastName="Cheng";
+       mySeatX=3;
+       mySeatY=4;
+       //imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
+       portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
+       standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
+       soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
+       setImage(portraitFile);
+       sitting=true;
+   }
     
      /**
-     * Act - do whatever the PranaviGollanapalli actor wants to do. This method is called whenever
+     * Act - do whatever the KatieCheng actor wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */   
     public void act() 
@@ -65,19 +66,13 @@ public class PranaviGollanapalli extends Student implements SpecialInterestOrHob
                 getName();
                 sayName(soundFile);
             
-                myHobby("I like to visit museums!");
+                myHobby("I like to play lacrosse!");
             // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
             // combination of all of those types of actions, or more. Make sure to save the original image if you manipulate it, so that you can put it back.
             // Call the sitDown() method to move back  to your seat
             
                 circleClass();  // Kilgore Trount's special method... Please write one of your own. You can use this, but please modify it and be creative.
-                appearClass("pranavigollanapalliMET.jpg");
-                appearClass("pranavigollanapalliMOMA.jpg");
-                appearClass("pranavigollanapalliBKN.PNG");
-                appearClass("pranavigollanapalliEIM.png");
-                appearClass("pranavigollanapalliSOL.jpg");
-                
-                
+           
                 sitDown();
             }
         
@@ -98,51 +93,40 @@ public class PranaviGollanapalli extends Student implements SpecialInterestOrHob
 
    
     /**
-     * This is a local method specific to the PranaviGollanapalli class used to animate the character once the image is clicked on.
+     * This is a local method specific to the KatieCheng class used to animate the character once the image is clicked on.
      * You should write your own methods to perform your own animation for your character/avatar.
      */
     public void circleClass(){
-        setLocation(8,3);
-        Greenfoot.delay(10);
+        setLocation(0,0);
+         Greenfoot.delay(10);
         // move right
-        for (int i=8;i<=12;i++){
-            setLocation(i,3);
-            Greenfoot.delay(10);
+        for (int i=1;i<=4;i++){ // move right by 4
+            setLocation(i,0); // y coordinate is 0, i as x increases
+            Greenfoot.delay(5); // makes time
         }
-        // move down
-        for (int i=3;i<=8;i++){
-            setLocation(12,i);
-            Greenfoot.delay(10);
-        }      
-        // move left
-        for (int i=12;i>=1;i--){
-            setLocation(i,8);
-            Greenfoot.delay(10);
-        }      
-        // move down
-        for (int i=8;i>=3;i--){
-            setLocation(1,i);
-            Greenfoot.delay(10);
-        }   
-        // move right
-        for (int i=1;i<=8;i++){
-            setLocation(i,3);
-            Greenfoot.delay(10);
-        }
-        // full circle
-        for (int i=0;i<=360;){
-            setLocation(8,3);
-            setRotation(i);
+        // move forward
+        for (int i=3;i>=0;i--){ // move forward by 3
+            Rotate(); // calls rotation method which causes it to spin in motion
+            setLocation(0,i); // x coordinate is 0, i as y increases
             Greenfoot.delay(5);
-            i=i+20;
-        }
-           Greenfoot.delay(20);
-           returnToSeat();
+        }   
+        // move left
+        for (int i=5;i>=0;i--){ // move left by 5
+            setLocation(i,5); // y coordinate set to 5, i as y varies
+            Greenfoot.delay(5);
+        }      
+        // move back
+        for (int i=1;i<=4;i++){ // move back by 4
+            setLocation(9,i); // x coordinate is 9, i as y varies
+            Greenfoot.delay(5);
+        }      
     }
-    public void appearClass(String p){
-        setImage(p);
-        setLocation(6,5);
-        Greenfoot.delay(90);
+    public void Rotate(){ // method that rotates the image
+        Greenfoot.delay(2);
+        for (int i=1; i<=36; i++){ // i dictates how much to rotate
+            setRotation((int)(10*i)); // 36*10=360 degrees of rotation
+            Greenfoot.delay(1);
+        }
     }
      /**
      * myHobby is one of the interfaces provided.  
