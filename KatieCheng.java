@@ -41,8 +41,8 @@ public class KatieCheng extends Student implements SpecialInterestOrHobby
     public KatieCheng() {
        firstName="Katie";
        lastName="Cheng";
-       mySeatX=3;
-       mySeatY=4;
+       mySeatX=5;
+       mySeatY=3;
        //imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
