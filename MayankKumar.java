@@ -1,17 +1,17 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * The KatieCheng class can be used as a model for your own class that represents you and your seating location in AP CSA
+ * The MayankKumar class can be used as a model for your own class that represents you and your seating location in AP CSA
  * 
  * @author Mr. Kaehms
  * @version 2.0 Aug 13, 2019
  * @version 3.0 July 21, 2020
  */
-public class KatieCheng extends Student implements SpecialInterestOrHobby
+public class MayankKumar extends Student implements SpecialInterestOrHobby
 {
 
     /**
-     * Constructor for the KatieCheng class.
+     * Constructor for the MayankKumar class.
      * Constructors are special methods with the same exact name as the class name.  
      * Constructors to not have return types.
      * Constructors can be overloaded. This means we can call a constructor with different sets of parameter
@@ -22,7 +22,7 @@ public class KatieCheng extends Student implements SpecialInterestOrHobby
      * @param int s (seat number within row seating arrangement)
      * 
      */
-    public KatieCheng(String f, String l, int r, int s) {
+    public MayankKumar(String f, String l, int r, int s) {
         firstName=f;
         lastName=l;
         mySeatX=r;
@@ -38,21 +38,21 @@ public class KatieCheng extends Student implements SpecialInterestOrHobby
      * Pay attention to how the row and seat variables set the location of the image.  1,1 is the first cell in the upper left
      * of the classroom.
      */
-    public KatieCheng() {
-       firstName="Katie";
-       lastName="Cheng";
-       mySeatX=5;
-       mySeatY=3;
-       //imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
+    public MayankKumar() {
+        firstName="Mayank";
+        lastName="Kumar";
+        mySeatX=1;
+        mySeatY=1;
+       // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
-       standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
-       soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
-       setImage(portraitFile);
-       sitting=true;
-   }
+       //standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
+        soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
+        setImage(portraitFile);
+        sitting=true;
+    }
     
      /**
-     * Act - do whatever the KatieCheng actor wants to do. This method is called whenever
+     * Act - do whatever the MayankKumar actor wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */   
     public void act() 
@@ -61,17 +61,17 @@ public class KatieCheng extends Student implements SpecialInterestOrHobby
         if(Greenfoot.mouseClicked(this)){
           //  if (sitting){
                 sitting=false;
-                setImage(standingFile);
-                System.out.println(""); // Print a blank line to create space between any student output.
-                getName();
-                sayName(soundFile);
+                //setImage(standingFile); 
+                //System.out.println(""); // Print a blank line to create space between any student output.
+                //getName();
+                sayName(soundFile); 
             
-                myHobby("I like to play lacrosse!");
+                myHobby("I like to run!");
             // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
             // combination of all of those types of actions, or more. Make sure to save the original image if you manipulate it, so that you can put it back.
             // Call the sitDown() method to move back  to your seat
             
-                circleClass();  // Kilgore Trount's special method... Please write one of your own. You can use this, but please modify it and be creative.
+                circleClass();  // Mayank Trount's special method... Please write one of your own. You can use this, but please modify it and be creative.
            
                 sitDown();
             }
@@ -93,40 +93,23 @@ public class KatieCheng extends Student implements SpecialInterestOrHobby
 
    
     /**
-     * This is a local method specific to the KatieCheng class used to animate the character once the image is clicked on.
+     * This is a local method specific to the MayankKumar class used to animate the character once the image is clicked on.
      * You should write your own methods to perform your own animation for your character/avatar.
      */
     public void circleClass(){
-        setLocation(0,0);
-         Greenfoot.delay(10);
-        // move right
-        for (int i=1;i<=4;i++){ // move right by 4
-            setLocation(i,0); // y coordinate is 0, i as x increases
-            Greenfoot.delay(5); // makes time
-        }
-        // move forward
-        for (int i=3;i>=0;i--){ // move forward by 3
-            Rotate(); // calls rotation method which causes it to spin in motion
-            setLocation(0,i); // x coordinate is 0, i as y increases
-            Greenfoot.delay(5);
-        }   
-        // move left
-        for (int i=5;i>=0;i--){ // move left by 5
-            setLocation(i,5); // y coordinate set to 5, i as y varies
-            Greenfoot.delay(5);
-        }      
-        // move back
-        for (int i=1;i<=4;i++){ // move back by 4
-            setLocation(9,i); // x coordinate is 9, i as y varies
-            Greenfoot.delay(5);
-        }      
-    }
-    public void Rotate(){ // method that rotates the image
-        Greenfoot.delay(2);
-        for (int i=1; i<=36; i++){ // i dictates how much to rotate
-            setRotation((int)(10*i)); // 36*10=360 degrees of rotation
-            Greenfoot.delay(1);
-        }
+        setLocation(6,7);
+        Greenfoot.delay(5);
+        rotationUp();
+        Greenfoot.delay(200);
+        rotationDown();
+        walkback2seat();
+        
+        
+        
+        
+        //randMovement();   
+        Greenfoot.delay(20);
+        returnToSeat();
     }
      /**
      * myHobby is one of the interfaces provided.  
@@ -136,5 +119,65 @@ public class KatieCheng extends Student implements SpecialInterestOrHobby
      public void myHobby(String s) {
          System.out.println(s);
 }
+    public void rotationUp(){
+        for (int i =2; i<= 3; i++){
+            for (int j =1; j<= 10; j++){
+                setRotation((36*j));
+            //int myNewHeight = myImage.getHeight()*i;
+            //int myNewWidth = myImage.getWidth()*i;
+            
+                Greenfoot.delay(2);
+            
+            }
+            GreenfootImage myImage = getImage();
+            myImage.scale((myImage.getWidth()*i), (myImage.getHeight()*i));
+        }
+    }
+    
+    public void rotationDown(){
+        for (int i =2; i<= 3; i++){
+            for (int j =1; j<= 10; j++){
+                setRotation((36*j));
+            //int myNewHeight = myImage.getHeight()*i;
+            //int myNewWidth = myImage.getWidth()*i;
+            
+                Greenfoot.delay(2);
+            
+            }
+            GreenfootImage myImage = getImage();
+            myImage.scale((myImage.getWidth()/i), (myImage.getHeight()/i));
+        }
+    }
+    
+    
+    public void walkback2seat(){
+        //walk left
+        /**/
+        
+        //walk up
+        for (int i=7;i>=4;i--){
+            setLocation(6,i);
+            Greenfoot.delay(10);
+        } 
+        
+        for (int i=6;i>=5;i--){
+            setLocation(i,4);
+            Greenfoot.delay(10);
+        } 
+    }
+    
+        /**
+    *Description: We made the student move around randomly instead of in the same movement at all times and be placed in a seat. 
+    *@param : No parameters
+    *@authors Mayank, Viswa, Kaustubh, Katie
+    */
+    
+    public void randMovement(){ 
+        for (int j=0; j<= 10; j++){
+    
+    
+        setLocation(Greenfoot.getRandomNumber(10), Greenfoot.getRandomNumber(10)); Greenfoot.delay(20); 
+        }
+     }
 
 }
