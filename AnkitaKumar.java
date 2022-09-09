@@ -46,7 +46,7 @@ public class AnkitaKumar extends Student implements SpecialInterestOrHobby
        // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        //standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
-        //soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
+        soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
         setImage(portraitFile);
         sitting=true;
     }
@@ -64,7 +64,7 @@ public class AnkitaKumar extends Student implements SpecialInterestOrHobby
                 //setImage(standingFile);
                 System.out.println(""); // Print a blank line to create space between any student output.
                 getName();
-                //sayName(soundFile);
+                sayName(soundFile);
             
                 myHobby("I like to read Harry Potter!");
             // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
