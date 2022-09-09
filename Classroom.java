@@ -155,6 +155,103 @@ public class Classroom extends World
         RishabhGaur rishabhgaur = new RishabhGaur();
         addObject(rishabhgaur,9,3);
         rishabhgaur.assignSeat();
+	
+
+        TheoLeung theoleung = new TheoLeung();
+        addObject(theoleung,3,6);
+        theoleung.assignSeat();
+
+        RyanLin ryanlin = new RyanLin();
+        addObject(ryanlin,2,6);
+        ryanlin.assignSeat();
+
+        AnikaitSrivastav anikaitsrivastav = new AnikaitSrivastav();
+        addObject(anikaitsrivastav,8,9);
+        anikaitsrivastav.assignSeat();
+
+        AlexanderSuen alexandersuen = new AlexanderSuen();
+        addObject(alexandersuen,6,10);
+        alexandersuen.assignSeat();
+
+        KrithikTamilvanan krithiktamilvanan = new KrithikTamilvanan();
+        addObject(krithiktamilvanan,5,6);
+        krithiktamilvanan.assignSeat();
+        
+        SrirangSanthosh srirangsanthosh = new SrirangSanthosh();
+        addObject(srirangsanthosh,6,7);
+        srirangsanthosh.assignSeat();
+
+        LukeZeng lukezeng = new LukeZeng();
+        addObject(lukezeng,9,10);
+        lukezeng.assignSeat();
+
+        SathvikaNadipalli sathvikanadipalli = new SathvikaNadipalli();
+        addObject(sathvikanadipalli,5,7);
+        sathvikanadipalli.assignSeat();
+
+        HitarthShukla hitarthshukla = new HitarthShukla();
+        addObject(hitarthshukla,5,10);
+        hitarthshukla.assignSeat();
+
+        AndresSilvera andressilvera = new AndresSilvera();
+        addObject(andressilvera,5,9);
+        andressilvera.assignSeat();
+
+        JohnnyLei johnnylei = new JohnnyLei();
+        addObject(johnnylei,9,4);
+        johnnylei.assignSeat();
+
+        SeanLee seanlee = new SeanLee();
+        addObject(seanlee,8,4);
+        seanlee.assignSeat();
+
+        SreenidhiSreenivasan sreenidhisreenivasan = new SreenidhiSreenivasan();
+        addObject(sreenidhisreenivasan,9,9);
+        sreenidhisreenivasan.assignSeat();
+
+        SaachiTuli saachituli = new SaachiTuli();
+        addObject(saachituli,8,10);
+        saachituli.assignSeat();
+
+        PranaviGollanapalli pranavigollanapalli = new PranaviGollanapalli();
+        addObject(pranavigollanapalli,8,3);
+        pranavigollanapalli.assignSeat();
+
+        WaleedRydhan waleedrydhan = new WaleedRydhan();
+        addObject(waleedrydhan,3,7);
+        waleedrydhan.assignSeat();
+
+        EvanRoche evanroche = new EvanRoche();
+        addObject(evanroche,2,7);
+        evanroche.assignSeat();
+        
+        
+        AnishaRao anisharao = new AnishaRao();
+        addObject(anisharao,8,6);
+        anisharao.assignSeat();
+
+        AbhinithiJanardhanan abhinithijanardhanan = new AbhinithiJanardhanan();
+        addObject(abhinithijanardhanan, 2, 4);
+        abhinithijanardhanan.assignSeat();  
+        
+
+        ViswaChoudhary viswachoudhary = new ViswaChoudhary("Viswa", "Choudhary",2,4); //added this to call the method in ViswaChoudhary.java
+        addObject(viswachoudhary,2,4); //added this to add an object and give it a row and column number
+        viswachoudhary.assignSeat(); // assigned a seat pertained to the object I created        
+        
+        KatieCheng katiecheng = new KatieCheng();
+        addObject(katiecheng,3,4);
+        katiecheng.assignSeat();
+        
+        ArjunPatel arjunpatel = new ArjunPatel();
+        addObject(arjunpatel,9,6);
+        arjunpatel.assignSeat();
+
+	MayankKumar mayankkumar = new MayankKumar();
+        addObject(mayankkumar, 5, 4);
+        mayankkumar.assignSeat();
+        
+	
     }
     
     public List<Student> getAllStudents(){
