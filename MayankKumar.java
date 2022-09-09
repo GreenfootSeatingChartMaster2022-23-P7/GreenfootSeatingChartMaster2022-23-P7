@@ -1,17 +1,17 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * The ArjunPatel class can be used as a model for your own class that represents you and your seating location in AP CSA
+ * The MayankKumar class can be used as a model for your own class that represents you and your seating location in AP CSA
  * 
  * @author Mr. Kaehms
  * @version 2.0 Aug 13, 2019
  * @version 3.0 July 21, 2020
  */
-public class ArjunPatel extends Student implements SpecialInterestOrHobby
+public class MayankKumar extends Student implements SpecialInterestOrHobby
 {
 
     /**
-     * Constructor for the ArjunPatel class.
+     * Constructor for the MayankKumar class.
      * Constructors are special methods with the same exact name as the class name.  
      * Constructors to not have return types.
      * Constructors can be overloaded. This means we can call a constructor with different sets of parameter
@@ -22,7 +22,7 @@ public class ArjunPatel extends Student implements SpecialInterestOrHobby
      * @param int s (seat number within row seating arrangement)
      * 
      */
-    public ArjunPatel(String f, String l, int r, int s) {
+    public MayankKumar(String f, String l, int r, int s) {
         firstName=f;
         lastName=l;
         mySeatX=r;
@@ -38,21 +38,21 @@ public class ArjunPatel extends Student implements SpecialInterestOrHobby
      * Pay attention to how the row and seat variables set the location of the image.  1,1 is the first cell in the upper left
      * of the classroom.
      */
-    public ArjunPatel() {
-        firstName="Arjun";
-        lastName="Patel";
+    public MayankKumar() {
+        firstName="Mayank";
+        lastName="Kumar";
         mySeatX=1;
         mySeatY=1;
        // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
-       standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
+       //standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
         soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
         setImage(portraitFile);
         sitting=true;
     }
     
      /**
-     * Act - do whatever the KilgoreTrout actor wants to do. This method is called whenever
+     * Act - do whatever the MayankKumar actor wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */   
     public void act() 
@@ -61,17 +61,17 @@ public class ArjunPatel extends Student implements SpecialInterestOrHobby
         if(Greenfoot.mouseClicked(this)){
           //  if (sitting){
                 sitting=false;
-                setImage(standingFile);
-                System.out.println(""); // Print a blank line to create space between any student output.
-                getName();
-                sayName(soundFile);
+                //setImage(standingFile); 
+                //System.out.println(""); // Print a blank line to create space between any student output.
+                //getName();
+                sayName(soundFile); 
             
-                myHobby("I like to watch cartoons!");
+                myHobby("I like to run!");
             // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
             // combination of all of those types of actions, or more. Make sure to save the original image if you manipulate it, so that you can put it back.
             // Call the sitDown() method to move back  to your seat
             
-                circleClass();  // Kilgore Trount's special method... Please write one of your own. You can use this, but please modify it and be creative.
+                circleClass();  // Mayank Trount's special method... Please write one of your own. You can use this, but please modify it and be creative.
            
                 sitDown();
             }
@@ -93,51 +93,23 @@ public class ArjunPatel extends Student implements SpecialInterestOrHobby
 
    
     /**
-     * This is a local method specific to the ArjunPatel class used to animate the character once the image is clicked on.
+     * This is a local method specific to the MayankKumar class used to animate the character once the image is clicked on.
      * You should write your own methods to perform your own animation for your character/avatar.
      */
-   public void circleClass(){
-        setLocation(9,6);
-         Greenfoot.delay(10);
-        // move right
-        for (int i=9;i<=6;i++){
-            setLocation(9,i);
-            Greenfoot.delay(10);
-        }
-        // move back
-        for (int i=8;i>=1;i--){
-            setLocation(i,9);
-            Greenfoot.delay(10);
-            setImage("spongebob.jpg");
-        }      
-         // move left
-        for (int i=9;i>=4;i--){
-            setLocation(1,i);
-            Greenfoot.delay(10);
-            setImage("peppa.jpg");
-        }      
-              // move Forward
-        for (int i=1;i<=9;i++){
-            setLocation(i,6);
-            Greenfoot.delay(10);
-            setImage("ppg.jpg");
-        }   
-        for(int i=0;i<5;i++){
-            setRotation(20);
-            setImage("spongebob.jpg");
-            Greenfoot.delay(10);
-            setRotation(-40);
-            Greenfoot.delay(10);
-            setImage("ppg.jpg");
-            setRotation(40);
-            Greenfoot.delay(10);
-            setImage("peppa.jpg");
-            setRotation(-20);
-            Greenfoot.delay(10);
-        }
-        setRotation(0);
-           Greenfoot.delay(20);
-           returnToSeat();
+    public void circleClass(){
+        setLocation(6,7);
+        Greenfoot.delay(5);
+        rotationUp();
+        Greenfoot.delay(200);
+        rotationDown();
+        walkback2seat();
+        
+        
+        
+        
+        //randMovement();   
+        Greenfoot.delay(20);
+        returnToSeat();
     }
      /**
      * myHobby is one of the interfaces provided.  
@@ -147,5 +119,65 @@ public class ArjunPatel extends Student implements SpecialInterestOrHobby
      public void myHobby(String s) {
          System.out.println(s);
 }
+    public void rotationUp(){
+        for (int i =2; i<= 3; i++){
+            for (int j =1; j<= 10; j++){
+                setRotation((36*j));
+            //int myNewHeight = myImage.getHeight()*i;
+            //int myNewWidth = myImage.getWidth()*i;
+            
+                Greenfoot.delay(2);
+            
+            }
+            GreenfootImage myImage = getImage();
+            myImage.scale((myImage.getWidth()*i), (myImage.getHeight()*i));
+        }
+    }
+    
+    public void rotationDown(){
+        for (int i =2; i<= 3; i++){
+            for (int j =1; j<= 10; j++){
+                setRotation((36*j));
+            //int myNewHeight = myImage.getHeight()*i;
+            //int myNewWidth = myImage.getWidth()*i;
+            
+                Greenfoot.delay(2);
+            
+            }
+            GreenfootImage myImage = getImage();
+            myImage.scale((myImage.getWidth()/i), (myImage.getHeight()/i));
+        }
+    }
+    
+    
+    public void walkback2seat(){
+        //walk left
+        /**/
+        
+        //walk up
+        for (int i=7;i>=4;i--){
+            setLocation(6,i);
+            Greenfoot.delay(10);
+        } 
+        
+        for (int i=6;i>=5;i--){
+            setLocation(i,4);
+            Greenfoot.delay(10);
+        } 
+    }
+    
+        /**
+    *Description: We made the student move around randomly instead of in the same movement at all times and be placed in a seat. 
+    *@param : No parameters
+    *@authors Mayank, Viswa, Kaustubh, Katie
+    */
+    
+    public void randMovement(){ 
+        for (int j=0; j<= 10; j++){
+    
+    
+        setLocation(Greenfoot.getRandomNumber(10), Greenfoot.getRandomNumber(10)); Greenfoot.delay(20); 
+        }
+     }
 
 }
