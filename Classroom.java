@@ -1,3 +1,4 @@
+
 import java.util.*;
 import greenfoot.*;
 //import java.util.ArrayList;
@@ -11,11 +12,11 @@ import java.io.FileNotFoundException;
 //import java.util.List;
 //import java.util.Arrays;
  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
- 
+
 /**
  * Write a description of class Classroom here.
- * 
- * @author Mr. Kaehms 
+ *
+ * @author Mr. Kaehms
  * @version 2.0  Note: updated for new desk layout. Goal is to make setting seats easy
  */
 public class Classroom extends World
@@ -23,12 +24,12 @@ public class Classroom extends World
     private ArrayList<Object> listo = new ArrayList<Object>();
     /**
      * Constructor for objects of class Classroom.
-     * 
+     *
      */
     public Classroom()
-    {    
+    {
         // Create a new world with 10x6 cells with a cell size of 130x130 pixels.
-        super(14, 14, 60); 
+        super(14, 14, 60);
 
         prepare();
     }
@@ -136,13 +137,12 @@ public class Classroom extends World
         studentdesk18.setDeskGroup(8);
         studentdesk20.setDeskGroup(8);
     }
-   
-    
+
     /**
      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.
      */
-    
+
     private void prepare()
     {
         createDeskLayout();
@@ -152,8 +152,9 @@ public class Classroom extends World
         KilgoreTrout kilgoretrout = new KilgoreTrout();
         addObject(kilgoretrout,2,3);
         kilgoretrout.assignSeat();
-     
-        
+  
+
+
         TheoLeung theoleung = new TheoLeung();
         addObject(theoleung,3,6);
         theoleung.assignSeat();
@@ -171,7 +172,7 @@ public class Classroom extends World
         alexandersuen.assignSeat();
 
         KrithikTamilvanan krithiktamilvanan = new KrithikTamilvanan();
-        addObject(krithiktamilvanan,5,10);
+        addObject(krithiktamilvanan,5,6);
         krithiktamilvanan.assignSeat();
         
         SrirangSanthosh srirangsanthosh = new SrirangSanthosh();
@@ -221,61 +222,78 @@ public class Classroom extends World
         EvanRoche evanroche = new EvanRoche();
         addObject(evanroche,2,7);
         evanroche.assignSeat();
+        
+        
+        AnishaRao anisharao = new AnishaRao();
+        addObject(anisharao,8,6);
+        anisharao.assignSeat();
 
         AbhinithiJanardhanan abhinithijanardhanan = new AbhinithiJanardhanan();
         addObject(abhinithijanardhanan, 2, 4);
         abhinithijanardhanan.assignSeat();  
+        
 
-        KennethNg kennethng = new KennethNg();
+        ViswaChoudhary viswachoudhary = new ViswaChoudhary("Viswa", "Choudhary",2,4); //added this to call the method in ViswaChoudhary.java
+        addObject(viswachoudhary,2,4); //added this to add an object and give it a row and column number
+        viswachoudhary.assignSeat(); // assigned a seat pertained to the object I created        
+        
+        KatieCheng katiecheng = new KatieCheng();
+        addObject(katiecheng,3,4);
+        katiecheng.assignSeat();
+        
+        ArjunPatel arjunpatel = new ArjunPatel();
+        addObject(arjunpatel,9,6);
+        arjunpatel.assignSeat();
+
+        KennethNg kennethng =new KennethNg();
         addObject(kennethng,5,6);
         kennethng.assignSeat();
-  
     }
-    
+
     public List<Student> getAllStudents(){
-       List<Student> s = getObjects(Student.class);  
+       List<Student> s = getObjects(Student.class);
        return s;
     }
-    
-  
+
+
     /**
      * gets a list of all students, and creates a new file that can be cut/pasted in as a prepare statement.
-     * 
+     *
      */
     public void createNewSeatingChart(){
         boolean lastWrite;
         String timestamp=DateFormatter.makeDate();
-      
-        String newChartFile="seatingchart-" + timestamp + ".txt";   
-        
-        List<Student> students = getObjects(Student.class); 
-        
+
+        String newChartFile="seatingchart-" + timestamp + ".txt";
+
+        List<Student> students = getObjects(Student.class);
+
         for (Student s:students){
-            String studentClassName=s.getFirstName()+s.getLastName(); 
-            
+            String studentClassName=s.getFirstName()+s.getLastName();
+
             String studentInstanceVar=studentClassName.toLowerCase();
             String instantiate=studentClassName + " " + studentInstanceVar + " = new " + studentClassName + "(); \n";
             String placeStudent="addObject(" + studentInstanceVar + ","+ s.getX() + "," + s.getY()+"); \n";
             String assignSeat = studentInstanceVar + ".assignSeat();\n\n";
-           
+
             appendFile(newChartFile,instantiate);
-            appendFile(newChartFile,placeStudent);  
+            appendFile(newChartFile,placeStudent);
             appendFile(newChartFile,assignSeat);
-            
+
         }
         Greenfoot.ask("Your file has been saved as: "+newChartFile+"     -Press [Enter] to continue.");
-    
+
     }
-    
- 
-    
+
+
+
     // modified from https://beginnersbook.com/2014/01/how-to-append-to-a-file-in-java/
-    
+
 
    public  void appendFile(String fname, String s){
-   {    
+   {
       try{
-         
+
         //Specify the file name and path here
         File file =new File(fname);
 
