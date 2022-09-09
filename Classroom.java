@@ -238,7 +238,7 @@ public class Classroom extends World
         viswachoudhary.assignSeat(); // assigned a seat pertained to the object I created        
         
         KatieCheng katiecheng = new KatieCheng();
-        addObject(katiecheng,3,4);
+        addObject(katiecheng,5,3);
         katiecheng.assignSeat();
         
         ArjunPatel arjunpatel = new ArjunPatel();
