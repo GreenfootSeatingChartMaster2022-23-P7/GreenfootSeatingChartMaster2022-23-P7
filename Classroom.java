@@ -183,6 +183,10 @@ public class Classroom extends World
         LukeZeng lukezeng = new LukeZeng();
         addObject(lukezeng,9,10);
         lukezeng.assignSeat();
+        
+        KennethNg kennethng = new KennethNg();
+        addObject(kennethng,5,6);
+        kennethng.assignSeat();
 
         SathvikaNadipalli sathvikanadipalli = new SathvikaNadipalli();
         addObject(sathvikanadipalli,5,7);
