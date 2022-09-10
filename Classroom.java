@@ -152,10 +152,10 @@ public class Classroom extends World
         addObject(kilgoretrout,2,3);
         kilgoretrout.assignSeat();
   
+  
 	      RishabhGaur rishabhgaur = new RishabhGaur();
         addObject(rishabhgaur,9,3);
         rishabhgaur.assignSeat();
-
 
         TheoLeung theoleung = new TheoLeung();
         addObject(theoleung,3,6);
@@ -234,7 +234,6 @@ public class Classroom extends World
         addObject(abhinithijanardhanan, 2, 4);
         abhinithijanardhanan.assignSeat();  
         
-
         ViswaChoudhary viswachoudhary = new ViswaChoudhary("Viswa", "Choudhary",2,4); //added this to call the method in ViswaChoudhary.java
         addObject(viswachoudhary,2,4); //added this to add an object and give it a row and column number
         viswachoudhary.assignSeat(); // assigned a seat pertained to the object I created        
@@ -247,14 +246,19 @@ public class Classroom extends World
         addObject(arjunpatel,9,6);
         arjunpatel.assignSeat();
 
-	      MayankKumar mayankkumar = new MayankKumar();
+    	  MayankKumar mayankkumar = new MayankKumar();
         addObject(mayankkumar, 5, 4);
         mayankkumar.assignSeat();
+        
         
         NeelSharma neelsharma = new NeelSharma();
         addObject(neelsharma,9,7);
         neelsharma.assignSeat();
         
+        KennethNg kennethng =new KennethNg();
+        addObject(kennethng,5,6);
+        kennethng.assignSeat();
+
 
     }
 
