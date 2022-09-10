@@ -248,19 +248,15 @@ public class Classroom extends World
         addObject(arjunpatel,9,6);
         arjunpatel.assignSeat();
 	    
-    	  MayankKumar mayankkumar = new MayankKumar();
+    	MayankKumar mayankkumar = new MayankKumar();
         addObject(mayankkumar, 5, 4);
         mayankkumar.assignSeat();
         
         NeelSharma neelsharma = new NeelSharma();
         addObject(neelsharma,9,7);
         neelsharma.assignSeat();
-        
-        KennethNg kennethng =new KennethNg();
-        addObject(kennethng,5,6);
-        kennethng.assignSeat();
 	
-	      AnkitaKumar ankitakumar = new AnkitaKumar();
+	AnkitaKumar ankitakumar = new AnkitaKumar();
         addObject(ankitakumar,3,4); 
         ankitakumar.assignSeat();
 
