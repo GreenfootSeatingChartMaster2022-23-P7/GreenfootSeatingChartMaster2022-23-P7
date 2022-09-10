@@ -153,7 +153,7 @@ public class Classroom extends World
         kilgoretrout.assignSeat();
   
   
-	      RishabhGaur rishabhgaur = new RishabhGaur();
+	RishabhGaur rishabhgaur = new RishabhGaur();
         addObject(rishabhgaur,9,3);
         rishabhgaur.assignSeat();
 
@@ -225,7 +225,6 @@ public class Classroom extends World
         addObject(evanroche,2,7);
         evanroche.assignSeat();
         
-        
         AnishaRao anisharao = new AnishaRao();
         addObject(anisharao,8,6);
         anisharao.assignSeat();
@@ -239,14 +238,14 @@ public class Classroom extends World
         viswachoudhary.assignSeat(); // assigned a seat pertained to the object I created        
         
         KatieCheng katiecheng = new KatieCheng();
-        addObject(katiecheng,3,4);
+        addObject(katiecheng,5,3);
         katiecheng.assignSeat();
         
         ArjunPatel arjunpatel = new ArjunPatel();
         addObject(arjunpatel,9,6);
         arjunpatel.assignSeat();
 
-    	  MayankKumar mayankkumar = new MayankKumar();
+    	MayankKumar mayankkumar = new MayankKumar();
         addObject(mayankkumar, 5, 4);
         mayankkumar.assignSeat();
         
