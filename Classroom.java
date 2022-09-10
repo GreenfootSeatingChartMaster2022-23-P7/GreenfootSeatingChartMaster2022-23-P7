@@ -257,6 +257,10 @@ public class Classroom extends World
         KennethNg kennethng =new KennethNg();
         addObject(kennethng,5,6);
         kennethng.assignSeat();
+	
+	AnkitaKumar ankitakumar = new AnkitaKumar();
+        addObject(ankitakumar,3,4); 
+        ankitakumar.assignSeat();
 
 
     }
