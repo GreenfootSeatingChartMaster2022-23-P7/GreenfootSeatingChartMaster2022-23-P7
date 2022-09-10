@@ -1,17 +1,15 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * The ArjunPatel class can be used as a model for your own class that represents you and your seating location in AP CSA
- * 
- * @author Mr. Kaehms
- * @version 2.0 Aug 13, 2019
- * @version 3.0 July 21, 2020
+ * The RishabhGaur class represents special information about me via the deployment of audio and video and also uses a method to make my character move around. * 
+ * @author Rishabh Gaur
+ * @version 1.0 Sep 1, 2022
  */
-public class ArjunPatel extends Student implements SpecialInterestOrHobby
+public class RishabhGaur extends Student implements SpecialInterestOrHobby
 {
 
     /**
-     * Constructor for the ArjunPatel class.
+     * Constructor for the RishabhGaur class.
      * Constructors are special methods with the same exact name as the class name.  
      * Constructors to not have return types.
      * Constructors can be overloaded. This means we can call a constructor with different sets of parameter
@@ -22,7 +20,7 @@ public class ArjunPatel extends Student implements SpecialInterestOrHobby
      * @param int s (seat number within row seating arrangement)
      * 
      */
-    public ArjunPatel(String f, String l, int r, int s) {
+    public RishabhGaur(String f, String l, int r, int s) {
         firstName=f;
         lastName=l;
         mySeatX=r;
@@ -38,9 +36,9 @@ public class ArjunPatel extends Student implements SpecialInterestOrHobby
      * Pay attention to how the row and seat variables set the location of the image.  1,1 is the first cell in the upper left
      * of the classroom.
      */
-    public ArjunPatel() {
-        firstName="Arjun";
-        lastName="Patel";
+    public RishabhGaur() {
+        firstName="Rishabh";
+        lastName="Gaur";
         mySeatX=1;
         mySeatY=1;
        // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
@@ -52,7 +50,7 @@ public class ArjunPatel extends Student implements SpecialInterestOrHobby
     }
     
      /**
-     * Act - do whatever the KilgoreTrout actor wants to do. This method is called whenever
+     * Act - do whatever the RishabhGaur actor wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */   
     public void act() 
@@ -66,12 +64,12 @@ public class ArjunPatel extends Student implements SpecialInterestOrHobby
                 getName();
                 sayName(soundFile);
             
-                myHobby("I like to watch cartoons!");
+                myHobby("I like to do robotics!");
             // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
             // combination of all of those types of actions, or more. Make sure to save the original image if you manipulate it, so that you can put it back.
             // Call the sitDown() method to move back  to your seat
             
-                circleClass();  // Kilgore Trount's special method... Please write one of your own. You can use this, but please modify it and be creative.
+                circleClass();  // Rishabh Gaur's special method... Please write one of your own. You can use this, but please modify it and be creative.
            
                 sitDown();
             }
@@ -93,50 +91,48 @@ public class ArjunPatel extends Student implements SpecialInterestOrHobby
 
    
     /**
-     * This is a local method specific to the ArjunPatel class used to animate the character once the image is clicked on.
-     * You should write your own methods to perform your own animation for your character/avatar.
+     * This is a local method specific to the Rishabh Gaur class used to animate the character once the image is clicked on.
+     * My character makes an infinity sign of movement after it is interacted with.
      */
-   public void circleClass(){
-        setLocation(9,6);
+    public void circleClass(){
+        int current_x_location = 0;
+        int current_y_location = 0;
+        setLocation(0,0);
          Greenfoot.delay(10);
-        // move right
-        for (int i=9;i<=6;i++){
-            setLocation(9,i);
+        //move down on left hand side
+        for (int i=0;i<=9;i++){
+            setLocation(0,i);
             Greenfoot.delay(10);
-        }
-        // move back
-        for (int i=8;i>=1;i--){
-            setLocation(i,9);
-            Greenfoot.delay(10);
-            setImage("spongebob.jpg");
-        }      
-         // move left
-        for (int i=9;i>=4;i--){
-            setLocation(1,i);
-            Greenfoot.delay(10);
-            setImage("peppa.jpg");
-        }      
-              // move Forward
-        for (int i=1;i<=9;i++){
-            setLocation(i,6);
-            Greenfoot.delay(10);
-            setImage("ppg.jpg");
+            current_x_location = getX();
+            current_y_location = getY();
         }   
-        for(int i=0;i<5;i++){
-            setRotation(20);
-            setImage("spongebob.jpg");
+        //move right diagonally and exponentially
+        setRotation(40);
+        
+        for (int i=0;i<=8;i++){
+            setLocation(current_x_location+14/3/2,current_y_location-i/1/2);
             Greenfoot.delay(10);
-            setRotation(-40);
-            Greenfoot.delay(10);
-            setImage("ppg.jpg");
-            setRotation(40);
-            Greenfoot.delay(10);
-            setImage("peppa.jpg");
-            setRotation(-20);
-            Greenfoot.delay(10);
-        }
+            current_x_location = getX();
+            current_y_location = getY();
+        }      
         setRotation(0);
-           Greenfoot.delay(20);
+        //move down on right hand side
+        for (int i=0;i<=6;i++){
+            setLocation(current_x_location,current_y_location+i/2);
+            Greenfoot.delay(10);
+            current_x_location = getX();
+            current_y_location = getY();
+        }   
+        //move left diagonally and exponentially
+        setRotation(-40);
+            for (int i=0;i<=7;i++){
+            setLocation(current_x_location-16/3/2,current_y_location-i);
+            Greenfoot.delay(10);
+            current_x_location = getX();
+            current_y_location = getY();
+        }    
+        setRotation(0);
+           Greenfoot.delay(40);
            returnToSeat();
     }
      /**
