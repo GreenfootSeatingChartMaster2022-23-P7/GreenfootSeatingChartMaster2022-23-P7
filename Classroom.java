@@ -1,4 +1,3 @@
-
 import java.util.*;
 import greenfoot.*;
 //import java.util.ArrayList;
@@ -153,7 +152,7 @@ public class Classroom extends World
         addObject(kilgoretrout,2,3);
         kilgoretrout.assignSeat();
   
-	RishabhGaur rishabhgaur = new RishabhGaur();
+	      RishabhGaur rishabhgaur = new RishabhGaur();
         addObject(rishabhgaur,9,3);
         rishabhgaur.assignSeat();
 
@@ -248,9 +247,13 @@ public class Classroom extends World
         addObject(arjunpatel,9,6);
         arjunpatel.assignSeat();
 
-	  MayankKumar mayankkumar = new MayankKumar();
+	      MayankKumar mayankkumar = new MayankKumar();
         addObject(mayankkumar, 5, 4);
         mayankkumar.assignSeat();
+        
+        NeelSharma neelsharma = new NeelSharma();
+        addObject(neelsharma,9,7);
+        neelsharma.assignSeat();
         
 
     }
