@@ -39,6 +39,7 @@ public class NeelSharma extends Student implements SpecialInterestOrHobby
        // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
+       standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
        setImage(portraitFile);
        sitting=true;
    }
