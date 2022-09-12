@@ -41,7 +41,7 @@ public class PanthShah extends Student implements SpecialInterestOrHobby
     public PanthShah() {
         firstName="Panth";
         lastName="Shah";
-        mySeatX=4;
+        mySeatX=1;
         mySeatY=1;
        // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
@@ -61,7 +61,7 @@ public class PanthShah extends Student implements SpecialInterestOrHobby
         if(Greenfoot.mouseClicked(this)){
           //  if (sitting){
                 sitting=false;
-                setImage(standingFile);
+                //setImage(standingFile);
                 System.out.println(""); // Print a blank line to create space between any student output.
                 getName();
                 sayName(soundFile);
