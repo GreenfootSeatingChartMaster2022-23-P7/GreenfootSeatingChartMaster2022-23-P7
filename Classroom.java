@@ -264,6 +264,10 @@ public class Classroom extends World
         SahilSandasani sahilsandasani = new SahilSandasani();
         addObject(sahilsandasani,5,7);
         sahilsandasani.assignSeat();
+	
+	PanthShah panthshah = new PanthShah();
+        addObject(panthshah,8,7);
+        panthshah.assignSeat();
 
     }
 
