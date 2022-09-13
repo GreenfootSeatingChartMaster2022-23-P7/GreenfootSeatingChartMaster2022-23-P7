@@ -190,7 +190,7 @@ public class Classroom extends World
         kennethng.assignSeat();
 
         SathvikaNadipalli sathvikanadipalli = new SathvikaNadipalli();
-        addObject(sathvikanadipalli,5,7);
+        addObject(sathvikanadipalli,6,6);
         sathvikanadipalli.assignSeat();
 
         HitarthShukla hitarthshukla = new HitarthShukla();
