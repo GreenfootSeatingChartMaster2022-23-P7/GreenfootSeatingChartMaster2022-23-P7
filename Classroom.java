@@ -272,6 +272,10 @@ public class Classroom extends World
         PanthShah panthshah = new PanthShah();
         addObject(panthshah,8,7);
         panthshah.assignSeat();
+        
+        KaustubhKuruba kaustubhkuruba = new KaustubhKuruba();
+        addObject(kaustubhkuruba,6,4);
+        kaustubhkuruba.assignSeat();
 
     }
 
